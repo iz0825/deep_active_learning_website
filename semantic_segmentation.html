@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Semantic Segmentation</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+  </head>
+  <body class="body">
+    <div id="main" class="main">
+      <div class="parallaxVigan"></div>
+      <div id="title" class="title">
+        <span class= "openButtonVigan" onclick="openNav()">&#9776;</span>
+        <h1 id="ssTitle" class="pageTitle">Semantic Segmentation</h1>
+      </div>
+      <div id = "sidenav" class="navBar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home / About</a>
+        <a href="semantic_segmentation.html">Semantic Segmentation</a>
+        <a href="deep_active_learning.html">Deep Active Learning</a>
+        <a href="application.html">Application</a>
+        <a href="uncertainty.html">Uncertainty</a>
+        <a href="goal.html">Advantages & Goal</a>
+      </div>
+      <div id="content" class="paragraphs">
+        <br>
+        <h2 id="subheading1">Overview</h2>
+        <p id="sp1"> Semantic segmentation is a technique implemented in the field of deep learning, and hence the various fields of academia and industry which deep learning is applied to, in order to process images. More specifically, it encompasses an array of techniques for decomposing (segmenting) an image into its meaningful (semantic) parts. It provides a method that permits classification of the different components that make up a picture at the pixel level, since each pixel is allocated to its individual class (the component of the picture it belongs to). This means that the final product obtained when Semantic Segmentation is applied to an image is a version of the original image, that has clearly been divided into its components, allowing for meaningful deductions to be made about the information that is presented in the picture, alongside potential further processing. </p>
+        <figure class="images">
+          <img class="figure-img" alt="technique illustration" src="images/rle.png">
+          <figcaption class="caption">Figure 1 - As we can see, the image is segmented into its individual classes (objects)</figcaption>
+        </figure>
+        <br>
+        <h2 id="subheading2">Example - Patch Classification</h2>
+        <p id="sp2">An example of an early deep learning attempt at solving the problem is patch classification, a system by which each pixel in the image was classified into its respective class by analysis of the ’patch’ of image that formed the neighbourhood of pixels surrounding our given pixel. A drawback of this methodology is that the images were required to be fixed in size, which imposes limits on the applications of the technique. More recent mechanisms for semantic segmentation typically implement Convolutional Neural Network (CNN) architectures in order to carry out the task in a way that is not only exceedingly quicker than patch classification, but also has the advantage of allowing Semantic segmentation to be carried out to generate semantic maps for images of varying sizes, hence lifting some of the limitations of Patch classification. </p>
+        <br>
+        <figure class="images">
+          <img class="figure-img" alt="example image" src="images/example.png" />
+          <figcaption class="caption">Figure 2: an example of a fully convolutional neural network that is used for semantic segmentation of an image</figcaption>
+        </figure>
+        <h2 id="subheading3">Prospects</h2>
+        <p id="sp3">Overall, Semantic Segmentation provides a procedure by which we can computationally deduce important information presented in images, and therefore is applicable in a wide range of problems, including but not limited to autonomous vehicles, facial recognition, and of course, Medical Imaging</p>
+        <h2 id="reference">References</h2>
+        <ol class="references">
+          <li> <a href="http://blog.qure.ai/notes/semantic-segmentation-deep-learning-review">http://blog.qure.ai/notes/semantic-segmentation-deep-learning-review</a> </li>
+          <li><a href="https://medium.com/nanonets/how-to-do-image-segmentation-using-deep-learning-c673cc5862ef">https://medium.com/nanonets/how-to-do-image-segmentation-using-deep-learning-c673cc5862ef</a></li>
+        </ol>
+      </div>
+      <hr class="sectionLine">
+      <div class="footer">
+        <footer>DALSeSe ©2019</footer>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Advantages & Goal</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+  </head>
+  <body class="body">
+    <div id="main" class="main">
+      <div class="parallaxGoal"></div>
+      <div id="title" class="title">
+        <span class= "openButton" onclick="openNav()">&#9776;</span>
+        <h1 class="pageTitle">Advantages & Goal</h1>
+      </div>
+      <div id = "sidenav" class="navBar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home / About</a>
+        <a href="semantic_segmentation.html">Semantic Segmentation</a>
+        <a href="deep_active_learning.html">Deep Active Learning</a>
+        <a href="application.html">Application</a>
+        <a href="uncertainty.html">Uncertainty</a>
+        <a href="goal.html">Advantages & Goal</a>
+      </div>
+      <div id="content" class="paragraphs">
+        <h2 id="subheading1">Advantages of Elisa's Research</h2>
+        <p id="gp1">In Elisa’s research, she developed a probabilistic method which is utilised to estimate uncertainty as well as the quality of predicted segmentations. Her method leads to many advantages compared to the existing algorithms: </p>
+        <ul class="advantagesList">
+          <li>It is able to capture the full 3D content of medical scans</li>
+          <li>The algorithm is faster at the inference stage</li>
+          <li>The performance is better compared to the state-of-the-art algorithm in lung segmentation</li>
+          <li>It is able to estimate the quality of predicted segmentation for unseen data</li>
+        </ul>
+        <h2 id="subheading2">Goal of the Project</h2>
+        <h3 id="transition">The main focus of this project will be the way that active learning can be combined with deep learning methods.</h3>
+        <p id="gp2">However, integrating the two learning methods poses some problems. For instance, deep learning poses several difficulties when used in an active learning setting. Two main difficulties are outlined below.</p>
+        <ol class="difficulties">
+          <li>Need to be able to handle small amount of data.</li>
+          <p id="difficulty1">Recent advances in deep learning are notorious for their dependence on large amounts of data, but sometimes there is a need to process only small amount of data and the current scheme needs to be adjusted to do so.</p>
+          <li>Most active learning acquisitions functions rely on model uncertainty, whereas in deep learning such model uncertainty is rarely represented. This is also the field that Elisa is currently working in as computer scientists are trying to find a robust solution to this problem by working on a way to estimate such uncertainty.</li>
+        </ol>
+      </div>
+      <hr class="sectionLine">
+      <div class="footer">
+        <footer>DALSeSe ©2019</footer>
+      </div>
+    </div>
+  </body>
+</html>

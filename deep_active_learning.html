@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Deep Active Learning</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+  </head>
+  <body class="body">
+    <div id="main" class="main">
+      <div class="parallaxDAL1"></div>
+      <div id="title" class="title">
+        <span id="openButton" class= "openButton" onclick="openNav()">&#9776;</span>
+        <h1 class="pageTitle">Deep Active Learning</h1>
+      </div>
+      <div id = "sidenav" class="navBar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home / About</a>
+        <a href="semantic_segmentation.html">Semantic Segmentation</a>
+        <a href="deep_active_learning.html">Deep Active Learning</a>
+        <a href="application.html">Application</a>
+        <a href="uncertainty.html">Uncertainty</a>
+        <a href="goal.html">Advantages & Goal</a>
+      </div>
+      <div id="content" class="paragraphs">
+        <p id="dp1">There are two basic concepts you need to understand before you read on to the detailed elaboration of Elisa’s project, namely deep learning and active learning.</p>
+        <h3 id="subheadingDH">For information regarding deep learning, please refer to the <a href="index.html" class="homeLink">Home / About</a> page.</h3>
+        <h2 id="subheading2">What is active learning?</h2>
+        <p id="dp3">Active learning techniques are designed for situations in which large amount of data needs to be processed - such as speech signals and image processing and so on. In these situations, some of the data is unlabelled, but obtaining the labels of the data is at high cost. Therefore, computer scientists are interested in labelling the minimal amount of data necessary for obtaining high performance in such programs. The basic idea behind active learning systems is to allow the machine learning algorithms to deliberately choose the data it learns from, so that less data will be needed. This is achieved by asking queries, from an unlabelled set of data, to be annotated and labelled by and oracle (e.g. human annotator).<sup><a href="#reference">[1]</a></sup></p>
+        <br>
+      </div>
+      <div class="parallaxDAL2"></div>
+      <div id="content2" class="paragraphs">
+        <h2>The Actual Process of the Project</h2>
+        <br>
+        <figure class="images">
+          <img class="image1" src="images/dal_process.png" alt="process diagram" title="process diagram" />
+          <figcaption class="caption">Figure 3: A diagram outlining the general process of the algorithm</figcaption>
+        </figure>
+        <p id="dp4">Figure 3 outlines the general process (pipeline) of this project. Initially, there is a pool of unlabelled data. The algorithm would pick out the most uncertain ones and pass it through the neural network that the deep learning algorithm uses. A predicted semantic segmentation is then produced. If the predicted version has large uncertainty measurements against the correct segmentation, this predicted segmentation is sent to the annotator. The annotator receives the prediction and using a tool provided, it corrects the segmentation result. This refined segmentation with initial volume is sent back to the algorithm and added to the initial pool of samples again. Then, the network will be retrained. In addition, a cost function can be used to measure the difference between predicted segmentation by the network and the correct segmentation provided by the annotator.</p>
+        <h2 id="reference">Reference</h2>
+        <ol class="references">
+          <li><a href="https://www.morganclaypool.com/doi/abs/10.2200/S00429ED1V01Y201207AIM018">https://www.morganclaypool.com/doi/abs/10.2200/S00429ED1V01Y201207AIM018</a></li>
+        </ol>
+      </div>
+      <hr class="sectionLine">
+      <div class="footer">
+        <footer>DALSeSe ©2019</footer>
+      </div>
+    </div>
+  </body>
+</html>

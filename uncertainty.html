@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Uncertainty</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+  </head>
+  <body class="body">
+    <div id="main" class="main">
+      <div class="parallaxAjanth"></div>
+      <div id="title" class="title">
+        <span class= "openButtonAjanth" onclick="openNav()">&#9776;</span>
+        <h1 class="pageTitle">Uncertainty</h1>
+      </div>
+      <div id = "sidenav" class="navBar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home / About</a>
+        <a href="semantic_segmentation.html">Semantic Segmentation</a>
+        <a href="deep_active_learning.html">Deep Active Learning</a>
+        <a href="application.html">Application</a>
+        <a href="uncertainty.html">Uncertainty</a>
+        <a href="goal.html">Advantages & Goal</a>
+      </div>
+      <div id="content" class="paragraphs">
+        <h2 id="subheading1">Why is there uncertainty in our results?</h2>
+        <p id="up1">When using semantic segmentation in fields such as medical imaging, active learning is very beneficial as it means the most useful or informative information can be chosen to retrain the network and improve its performance. One such method by which this can be achieved is pixel-wise predictions so that the most useful pixels are then used to retrain the neural network. However, there is no way to verify that this method is robust and would indeed lead to the most useful pixels being chosen, and so there is a certain level of uncertainty that accompanies these predictions. Figure 8 below demonstrates how there is a difference in the real area of a skin melanoma, and the area determined by the neural network.</p>
+        <figure>
+          <img id = "comparison" src = "images/uncertaintyTwo.PNG" alt = "A comparison of the real size of the area of a skin melanoma and the area predicted by the neural network">
+          <figcaption class = "caption">Figure 8: Comparison between the real area and the predicted area of a melanoma</figcaption>
+        </figure>
+        <h2 id="subheading2">How do we measure uncertainty?</h2>
+        <p id="up2">In order to measure the uncertainty of the predictions resulting from the use of the active learning algorithm, it would be ideal if it were possible to analyse the entire distribution of the unlabeled data and the respective labels. However, if the fact that the algorithm would be repeatedly used were to be considered alongside the knowledge that there is usually no efficient method by which a whole distribution can be analysed, it would be reasonable to conclude that this approach would be far too time-consuming to be utilised in a practical environment. Thus, a concept known as variational inference is harnessed so that an approximation of the distribution can be made such that the amount by which this approximation diverges from the original full distribution is minimal. </p>
+        <p id="up3">Once this approximation has been made, the uncertainty for each pixel can be calculated such that a number of predictions are made regarding the same pixel, and the variation in the predictions coupled with other factors would determine the uncertainty of the result. The precision of this uncertainty estimate is also dependent on the number of the predictions whereby the larger the number, the higher the precision of the estimate. From this, a numerical score can be determined to estimate the prediction confidence.</p>
+        <h2 id="reference">Reference</h2>
+        <ol class="references">
+          <li><a href="https://arxiv.org/pdf/1711.09168.pdf">arXiv:1711.09168v2 [cs.CV]</a></li>
+        </ol>
+      </div>
+      <hr class="sectionLine">
+      <div class="footer">
+        <footer>DALSeSe ©2019</footer>
+      </div>
+    </div>
+  </body>
+</html>

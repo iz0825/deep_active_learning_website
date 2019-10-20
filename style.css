@@ -1,0 +1,417 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  background-color: #f3fdff;
+  font-family: palatino;
+  margin: 0;
+}
+
+.parallaxDAL1 {
+  background-image: url("https://www.doc.ic.ac.uk/~yiz18/topics/dal_pic1.png");
+  min-height: 100vh;
+  max-width: 100%;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxDAL2 {
+  background-image: url("https://www.doc.ic.ac.uk/~yiz18/topics/dal_pic2.png");
+  min-height: 100vh;
+  max-width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxAjanth {
+  background-image: url("https://www.doc.ic.ac.uk/~yiz18/topics/uncertaintyOne.jpg");
+  min-height: 100vh;
+  max-width: 100%;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxVigan {
+  background-image: url("https://www.doc.ic.ac.uk/~yiz18/topics/semantic_segmentation.png");
+  min-height: 100vh;
+  max-width: 100%;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax {
+  background-image: url("https://www.doc.ic.ac.uk/~yiz18/topics/application.png");
+  min-height: 100vh;
+  max-width: 100%;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallaxGoal {
+  background-image: url("https://www.doc.ic.ac.uk/~yiz18/topics/goal.png");
+  min-height: 100vh;
+  max-width: 100%;
+  margin-bottom: 30px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main {
+  transition: margin-left 0.5s;
+  padding: 0;
+}
+
+.openButton {
+  font-size: 40px;
+  cursor: pointer;
+  margin-left: 30px;
+  position: fixed;
+  top: 25px;
+  color: #01213a;
+}
+
+.openButtonAjanth {
+  font-size: 40px;
+  cursor: pointer;
+  margin-left: 30px;
+  position: fixed;
+  top: 25px;
+  color: #465d6f;
+}
+
+.openButtonVigan {
+  font-size: 40px;
+  cursor: pointer;
+  margin-left: 30px;
+  position: fixed;
+  top: 25px;
+  color: #2f495d;
+}
+
+.pageTitle {
+  color: #01213a;
+  font-family: verdana;
+  font-size: 48px;
+  margin-left: 130px;
+  margin-right: 150px;
+  display: inline;
+}
+
+.navBar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #01213a;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.navBar a {
+  padding: 15px 8px 15px 32px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #979797;
+  display: block;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.navBar a:hover {
+  color: white;
+}
+
+.navBar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.subheadingDH a:hover, a:active {
+  color: #FFF;
+  background-color: #b9c2c9;
+}
+
+.homeLink:link, .homeLink:visited {
+    color: #01213a;
+}
+
+.paragraphs {
+  font-size: 22px;
+  margin-left: 130px;
+  margin-right: 150px;
+  text-align: justify;
+}
+
+.paragraphs p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 30px;
+  color: #212121;
+}
+
+.paragraphs h2 {
+  padding-top: 20px;
+  color: #01213a;
+  text-align: left;
+}
+
+.paragraphs h3 {
+  padding-top: 20px;
+  color: #01213a;
+  text-align: left;
+}
+
+.caption {
+  font-size: 18px;
+  font-style: italic;
+  color: #616161;
+  text-align: center;
+}
+
+.footer {
+  text-align: center;
+}
+
+@media only screen and (max-height: 450px) {
+  .navBar {
+    padding-top: 15px;
+  }
+  .navBar a {
+    font-size: 18px;
+  }
+  .pageTitle {
+    font-size: 44px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .paragraphs {
+    font-size: 16px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .caption {
+    font-size: 14px;
+  }
+  .paragraphs p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .paragraphs h2 {
+    padding-top: 0px;
+  }
+  .footer {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 455px) {
+  .navBar a {
+    font-size: 18px;
+  }
+  .openButton {
+    top: 10px;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+  .pageTitle {
+    font-size: 22px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .paragraphs {
+    font-size: 16px;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .paragraphs h2 {
+    font-size: 19px;
+  }
+  .paragraphs h3 {
+    font-size: 17px;
+  }
+  .caption {
+    font-size: 14px;
+  }
+  #ssTitle {
+    font-size: 17px;
+  }
+  .openButtonAjanth {
+    top: 10px;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+  .openButtonVigan {
+    top: 10px;
+    font-size: 25px;
+    margin-left: 10px;
+  }
+  .footer {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 456px) and (max-width: 681px) {
+  .openButton {
+    top: 5px;
+    margin-left: 10px;
+  }
+  .pageTitle {
+    font-size: 28px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  #ssTitle {
+    font-size: 25px;
+ }
+  .paragraphs {
+    font-size: 16px;
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  .caption {
+    font-size: 14px;
+  }
+  .openButtonAjanth {
+    top: 5px;
+    margin-left: 10px;
+  }
+  .openButtonVigan {
+    top: 5px;
+    margin-left: 10px;
+  }
+  .footer {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 682px) and (max-width: 854px) {
+  .pageTitle {
+    font-size: 36px;
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+  .paragraphs {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+/* disable parallax effect for tablets and mobiles */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+    min-height: 50vh;
+  }
+  .parallaxDAL1 {
+    background-attachment: scroll;
+    min-height: 50vh;
+  }
+  .parallaxDAL2 {
+    background-attachment: scroll;
+    min-height: 50vh;
+  }
+  .parallaxAjanth {
+    background-attachment: scroll;
+    min-height: 50vh;
+  }
+  .parallaxVigan {
+    background-attachment: scroll;
+    min-height: 50vh;
+  }
+  .parallaxGoal {
+    background-attachment: scroll;
+    min-height: 50vh;
+  }
+}
+
+.images {
+  text-align: center;
+}
+
+.images img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.difficulties {
+  padding-left: 30px;
+  line-height: 30px;
+  color: #212121;
+  padding-bottom: 20px;
+}
+
+.references {
+  word-wrap: break-word;
+  padding-left: 20px;
+}
+
+.difficulties p {
+  padding-top: 0px;
+  margin-top: 0px;
+  font-style: oblique;
+}
+
+.image1 {
+  width: auto;
+  height: auto;
+  max-height: 80vh;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#comparison {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: auto;
+  padding-bottom: 20px;
+}
+
+.figure-img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  padding-bottom: 20px;
+}
+
+.advantagesList {
+  list-style-type: square;
+  padding-bottom: 20px;
+}
+
+.advantagesList li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 30px;
+  color: #212121;
+}
+
+.applicationImages {
+  max-height: 50vh;
+  padding-bottom: 20px;
+}

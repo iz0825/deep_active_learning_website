@@ -1,0 +1,207 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color:#f3fdff;
+  }
+
+#blockyPic {
+    position: relative;
+    background-image: url("https://www.doc.ic.ac.uk/~yiz18/topics/newMainPic.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.siteTitle {
+    position: absolute;
+    left: 0;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+
+.siteTitle span.siteTitleT {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 3.5vw;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 10px;
+  }
+
+#intro {
+    position: absolute;
+    left: 0;
+    top: 65%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+  }
+
+#intro span.introT {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 1.5vw;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    letter-spacing: 10px;
+  }
+
+#scrollText {
+    font-size: 1.75vw;
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    position: absolute;
+    bottom: 5%;
+    left: 25%
+  }
+
+#scrollButton:link, #scrollButton:visited {
+    border-radius: 25px;
+    background-color: #FFF;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#restButton:link, #restButton:visited {
+    border-radius: 25px;
+    background-color: #FFF;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+
+ /*#f44336*/
+#scrollText a:hover, a:active {
+    background-color: black;
+    color: white;
+  }
+
+h1 {
+    font-family: palatino, serif;
+    color: #01213a;
+    font-size: 4.5vw;
+    text-align: center;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+h3 {
+  padding-top: 20px;
+  color: #01213a;
+}
+
+#AboutHer {
+  font-family: palatino;
+}
+
+.openButton {
+  font-size: 48px;
+  cursor: pointer;
+  margin-left: 30px;
+  position: absolute;
+  top: 105%;
+  color: #01213a;
+}
+
+.navBar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #01213a;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.navBar a {
+  padding: 15px 8px 15px 32px;
+  text-decoration: none;
+  font-size: 24px;
+  color: #979797;
+  display: block;
+  transition: 0.3s;
+  white-space: nowrap;
+}
+
+.navBar a:hover {
+  color: white;
+}
+
+.navBar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 5px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.paragraphs {
+    color: #212121;
+    font-size: 22px;
+    margin-left: 150px;
+    margin-right: 150px;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    line-height: 30px;
+}
+
+.paragraphs p {
+  padding-bottom: 20px;
+}
+
+.paragraphs h2 {
+  padding-top: 20px;
+  color: #01213a;
+}
+
+.researchList {
+  list-style-type: square;
+}
+
+.researchList li {
+  padding-bottom: 20px;
+}
+
+.DL {
+  color: #515151;
+  font-weight: bold;
+}
+
+#finalsection {
+    position: relative;
+}
+
+#linkToRest {
+  position: absolute;
+  font-size: 1.75vw;
+  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  bottom: 5%;
+  right: 5%;
+}
+
+#linkToRest a:hover, a:active {
+    background-color: #01213a;
+    color: #FFF;
+}
+
+.footer {
+    text-align: center;
+}
+
+.references {
+  word-wrap: break-word;
+  padding-left: 20px;
+}

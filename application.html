@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Application</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    <script src="functions.js"></script>
+  </head>
+  <body class="body">
+    <div id="main" class="main">
+      <div class="parallax"></div>
+      <div id="title" class="title">
+        <span class= "openButton" onclick="openNav()">&#9776;</span>
+        <h1 class="pageTitle">Application</h1>
+      </div>
+      <div id = "sidenav" class="navBar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Home / About</a>
+        <a href="semantic_segmentation.html">Semantic Segmentation</a>
+        <a href="deep_active_learning.html">Deep Active Learning</a>
+        <a href="application.html">Application</a>
+        <a href="uncertainty.html">Uncertainty</a>
+        <a href="goal.html">Advantages & Goal</a>
+      </div>
+      <div id="content" class="paragraphs">
+        <h2 id="subheading1">Segmentation of Medical Images via Deep Learning Techniques</h2>
+        <p id="ap1">Semantic segmentation is one of the most important steps in medical imaging. Much research has been devoted to investigating how to accomplish this segmentation automatically, but the task has been demonstrated to be exceptionally difficult because of the substantial variation of anatomy across various patients and the many different modalities (X-ray, CT, MRI, microscopy, PET, SPECT, Endoscopy, OCT, and many more) used to create medical images. However, recent advances in deep learning have made it conceivable to essentially enhance the semantic segmentation techniques in the field of computer vision and the performance of medical image recognition. Due to the data-driven methodologies of hierarchical feature learning in deep learning frameworks, these advances can be smoothly translated to medical images. A number of deep convolutional neural networks have been effectively applied to medical images. Particularly fully convolutional architectures have been demonstrated to be effective for segmentation of 3D medical images.
+        </p>
+        <figure class="images">
+          <img src="images/applicationThree.PNG" alt="examples of semantic metical image segmentation" class="applicationImages"/>
+          <figcaption class="caption">Figure 4: Examples of Semantic Medical Image Segmentation</figcaption>
+        </figure>
+        <br>
+        <figure class="images">
+          <img src="images/applicationFour.PNG" alt="subcortical brain segmentation image" class="applicationImages"/>
+          <figcaption class="caption">Figure 5: Subcortical Brain Segmentation</figcaption>
+        </figure>
+        <br>
+        <figure class="images">
+          <img src="images/applicationTwo.PNG" alt="aorta segmentation identification" class="applicationImages"/>
+          <figcaption class="caption">Figure 6: Real aorta size on the left followed by identification of the aorta by three neural networks and the ideal solution on the right</figcaption>
+        </figure>
+        <br>
+        <h2>Operation</h2>
+        <p id="ap2">A further architecture implemented in the field of Deep learning is the UNET architecture. This technology was actually conceived as a method to solve problems in biomedical image segmentation, and has developed to be a state of the art technology implemented in semantic segmentation. U-Net is formally described as an "end-to-end encoder-decoder network". There are two parts to the architecture: Part 1 (colloquially referred to as the down part), which involves a process called down-sampling, followed by Part 2, (colloquially referred to as the up part), which is correspondingly responsible for a process called upsampling. It is the illustration of this process, and its respective down and up parts, that resembles a U, and gives the architecture its name.<sup><a href="#reference">[1]</a></sup></p>
+        <p id="ap3">In the architecture, there consists a contracting path which captures context and an expanding path which allows for precise localization. Such a network can be then subsequently trained end-to-end from very few images such that it is able to outperform the prior best method (a sliding-window convolutional network) on the ISBI challenge for the segmentation of neuronal structures in electron microscopic stacks. It should also be noted that the network is fast. Segmentation of a 512x512 image takes less than a second on a recent GPU.<sup><a href="#reference">[2]</a></sup></p>
+        <figure class="images">
+          <img src="images/3dcnn.png" alt="proposed 3D fully-CNN architechture" />
+          <figcaption class="caption">Figure 7: A proposed 3D fully-CNN architecture that would improve the current semantic segmentation process by requiring less data and maintain relatively high resolution - Dolz et al., Neuroimage 2017</figcaption>
+        </figure>
+        <br>
+        <h2 id="subheading3">Impacts of Medical Image Segmentation</h2>
+        <p id="ap4">The results of medical image segmentation can be utilised to acquire further diagnostic insights. Some applications include the automatic measurement of organs, cell counting, or simulations based on the extracted boundary information. The improvement of the algorithm, thereby leading to enhanced performance of medical image recognition, will thus make a great impact on future diagnosis.</p>
+        <h2 id="reference">References</h2>
+        <ol class="references">
+          <li> <a href="https://medium.com/@keremturgutlu/semantic-segmentation-u-net-part-1-d8d6f6005066">https://medium.com/@keremturgutlu/semantic-segmentation-u-net-part-1-d8d6f6005066</a> </li>
+          <li><a href="https://arxiv.org/pdf/1505.04597.pdf">O. Ronneberger, P. Fischer, and T. Brox, U-Net: Convolutional Networks for Biomedical Image Segmentation</a></li>
+        </ol>
+      </div>
+      <hr class="sectionLine">
+      <div class="footer">
+        <footer>DALSeSe ©2019</footer>
+      </div>
+    </div>
+  </body>
+</html>
